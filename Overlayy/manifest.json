@@ -20,5 +20,8 @@
       "matches": ["http://*/*", "https://*/*"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "icons" : {
+  "128":"icon.png"
+  }
 }
