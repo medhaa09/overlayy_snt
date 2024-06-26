@@ -37,3 +37,9 @@ window.addEventListener('scroll', () => {
         scrollHeight: document.documentElement.scrollHeight
     });
 });
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (request.type === 'getInteractions') {
+        sendResponse({ interactions });
+    }
+});
